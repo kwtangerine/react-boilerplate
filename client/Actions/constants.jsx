@@ -1,0 +1,10 @@
+/** @jsx React.DOM */
+'use strict';
+
+module.exports = {
+  // ACTION_NAME: "ACTION_NAME",
+  DECREMENT_COUNTER: 'DECREMENT_COUNTER',
+  INCREMENT_COUNTER: 'INCREMENT_COUNTER',
+
+  GET_STUDENTS: 'GET_STUDENTS',
+};
