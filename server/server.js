@@ -38,6 +38,10 @@ if (!isProduction) {
   });
 }
 
+app.get('/*', function(req, res) {
+  res.sendFile('/index.html', {root: publicPath});
+});
+
 // It is important to catch any errors from the proxy or the
 // server will crash. An example of this is connecting to the
 // server when webpack is bundling

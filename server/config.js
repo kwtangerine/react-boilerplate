@@ -6,7 +6,7 @@ var config;
 
 config = {
   server: {
-    port: isProduction? 80 : 4000
+    port: isProduction? 8080 : 4000
   },
   webdevserver: {
     port: 8090
