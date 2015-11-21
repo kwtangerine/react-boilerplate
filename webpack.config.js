@@ -5,24 +5,29 @@ var Webpack = require('webpack');
 
 var config = require('./server/config.js');
 
+var isProduction = process.env.NODE_ENV === 'production';
+
+var mainEntries = ['./client/index.jsx'];
+
+if(!isProduction) {
+  mainEntries = main.concat([
+    // For hot style updates
+    'webpack/hot/dev-server' ,
+    // The script refreshing the browser on none hot updates
+    'webpack-dev-server/client?http://localhost:' + config.webdevserver.port,
+  ]);
+}
+
 module.exports = {
   // Makes sure errors in console map to the correct file
   // and line number
   devtool: 'eval',
   entry: {
-    main: [
-      // For hot style updates
-      'webpack/hot/dev-server',
-      // The script refreshing the browser on none hot updates
-      'webpack-dev-server/client?http://localhost:' + config.webdevserver.port,
-      // Our application
-      './client/index.jsx',
-    ]
+    main: mainEntries
   },
   output: {
-    path: path.join(__dirname, 'build'),
-    filename: '[name].js',
-    publicPath: '/build/'
+    path: path.join(__dirname, isProduction? 'public' : '' , 'build'),
+    filename: '[name].js'
   },
   module: {
     loaders: [

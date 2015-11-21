@@ -6,8 +6,9 @@
   "main": "server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "set NODE_ENV=production&&node ./server/server.js",
-    "start:dev": "set NODE_ENV=development&&gulp"
+    "start": "export NODE_ENV=production&&webpack -p&&node ./server/server.js",
+    "start:dev": "export NODE_ENV=development&&gulp",
+    "start:devw": "set NODE_ENV=development&&gulp"
   },
   "author": "Kiky Tangerine",
   "dependencies": {
