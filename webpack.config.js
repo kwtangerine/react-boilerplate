@@ -10,7 +10,7 @@ var isProduction = process.env.NODE_ENV === 'production';
 var mainEntries = ['./client/index.jsx'];
 
 if(!isProduction) {
-  mainEntries = main.concat([
+  mainEntries = mainEntries.concat([
     // For hot style updates
     'webpack/hot/dev-server' ,
     // The script refreshing the browser on none hot updates
