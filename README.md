@@ -1,13 +1,13 @@
-# KT-React-Boilerplate
+# React-Boilerplate
 
-This is the repository for KT-React-Boilerplate project.
+This is the repository for my personal React-Boilerplate project.
 
 ## Prerequisites (Windows)
 
 1. Install [Node v4.2.2](https://nodejs.org/en/)
 2. Install [Python 3.5](https://www.python.org/downloads/release/python-350/)
 3. Install [Git](https://git-scm.com/download/win)
-4. Add git cmd folder to your PATH environment variable (should look something like C:\Users\kikytan\AppData\Local\Programs\Git\cmd)
+4. Add git cmd folder to your PATH environment variable (should look something like C:\Users\<username>\AppData\Local\Programs\Git\cmd)
 5. Clone the project.
 6. (Optional) Install [Atom](https://atom.io/)
 7. (Optional) Once Atom is installed, open up a PowerShell window and type

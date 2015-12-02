@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 // Vendors
 var express = require('express');
