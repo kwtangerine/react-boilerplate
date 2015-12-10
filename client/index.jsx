@@ -2,7 +2,7 @@
 'use strict'
 
 // Stylesheet
-require("../public/css/style.css");
+require('../public/css/style.css');
 
 // React
 var React = require('react');
@@ -52,11 +52,11 @@ var store = configureStore();
 // Initialize routes for React-Router
 var routes = (
   <Router history={createBrowserHistory()}>
-    <Route path="/" component={App}>
+    <Route path='/' component={App}>
       <IndexRoute component={Home}/>
-      <Route path="counter" component={Counter}/>
-      <Route path="about" component={About}/>
-      <Route path="*" component={NotFound}/>
+      <Route path='counter' component={Counter}/>
+      <Route path='about' component={About}/>
+      <Route path='*' component={NotFound}/>
     </Route>
   </Router>
 );

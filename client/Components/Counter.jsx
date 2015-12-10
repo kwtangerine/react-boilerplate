@@ -6,7 +6,7 @@ var Counter = React.createClass({
     render: function(){
 
         return (
-        <div className="counter">
+        <div className='counter'>
           Clicked: {this.props.globalStates.counter} times
           <br/>
           <button onClick={this.props.actions.increment}>+</button>

@@ -9,7 +9,7 @@ var Home = React.createClass({
   render: function() {
     return (
       <div>
-        <Students id= "studentsblock" actions={this.props.actions} students={this.props.globalStates.students} />
+        <Students id= 'studentsblock' actions={this.props.actions} students={this.props.globalStates.students} />
       </div>
     );
   }

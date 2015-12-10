@@ -34,9 +34,6 @@ module.exports = function () {
     // from the build path when proxying:
     publicPath: '/build/',
 
-    // Configure hot replacement
-    hot: true,
-
     // The rest is terminal configurations
     quiet: false,
     noInfo: true,
